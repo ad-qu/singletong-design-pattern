@@ -2,7 +2,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.After;
 import org.junit.Assert;
-import java.awt.*;
 import edu.upc.eetac.dsa.I18NManager;
 import java.util.MissingResourceException;
 

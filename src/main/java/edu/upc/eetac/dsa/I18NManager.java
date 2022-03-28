@@ -1,5 +1,6 @@
 package edu.upc.eetac.dsa;
 
+import org.apache.log4j.Logger;
 import java.util.ResourceBundle;
 import java.util.MissingResourceException;
 
@@ -7,6 +8,7 @@ public class I18NManager {
 
     private static I18NManager instance;
     private ResourceBundle ca, es, it, pt;
+    private final static Logger logger = Logger.getLogger(I18NManager.class);
 
     private I18NManager() {
 
@@ -24,6 +26,8 @@ public class I18NManager {
     }
 
     public String getText(String r, String l) throws MissingResourceException {
+
+        logger.info("Language: " + r + " key: " + l);
 
         ResourceBundle rb = switch (r) {
 
