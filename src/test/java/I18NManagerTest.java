@@ -31,10 +31,10 @@ public class I18NManagerTest {
         Assert.assertEquals("hola", msg1Bis);
 
         String msg2 = I18NManager.getInstance().getText("ca", "l2");
-        Assert.assertEquals("adéu", msg2);
+        Assert.assertEquals("adeu", msg2);
 
         String msg3 = I18NManager.getInstance().getText("es", "l2");
-        Assert.assertEquals("adiós", msg3);
+        Assert.assertEquals("adios", msg3);
 
         String msg4 = I18NManager.getInstance().getText("pt", "l1");
         Assert.assertEquals("obrigado", msg4);
@@ -54,7 +54,7 @@ public class I18NManagerTest {
         Assert.assertEquals("hola", msg1);
 
         String msg2 = I18NManager.getInstance().getText("ca", "l2");
-        Assert.assertEquals("adéu", msg2);
+        Assert.assertEquals("adeu", msg2);
 
         String msg3 = I18NManager.getInstance().getText("XX", "l2");
     }

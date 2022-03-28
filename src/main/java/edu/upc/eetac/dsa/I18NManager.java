@@ -41,8 +41,5 @@ public class I18NManager {
         return rb.getString(l);
     }
 
-    public void clear() {
-
-        instance = null;
-    }
+    public void clear() { instance = null; }
 }
